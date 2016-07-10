@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script>
+	var uN = new Array(2)
+	var cN = new Array(2)
+	var attemp_count = new Array(2)
+	alert("Привет! Предлагаю увлекательную игру для двоих")
+
+	for (var i = 0; i <=1; i++)
+	{	
+		cN[i] = Math.floor(Math.random()*100) + 1
+		uN[i] = +prompt("Игрок " + (i+1) +", угадайте число от 1 до 100")
+		attemp_count[i] = 1
+		while (uN[i] != cN[i])
+		{			
+			if ( cN[i] > uN[i] ) 
+				{ uN[i] = +prompt("Число меньше загаданного") }
+			if ( cN[i] < uN[i]) 
+				{ uN[i] = +prompt("Число больше загаданного") }
+			attemp_count[i]++
+		}	
+	alert ("Вы угадали с " + attemp_count[i] +" попыток")
+	} 
+
+	if (attemp_count[0] < attemp_count[1])
+		{	alert("Первый Игрок победил")	}
+	else if (attemp_count[0] > attemp_count[1])
+		{	alert("Второй Игрок победил")	}
+	else if (attemp_count[0] = attemp_count[1])
+	 	{	alert("В ходе поедика ничья")	}
+
+</script>

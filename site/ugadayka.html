@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+
+	var rN = Math.floor( Math.random() * 100 )+1;
+
+	var uN = -1;
+	var count = 0;
+	while ( rN != uN)
+	{
+		uN = parseInt(prompt("Угадай-ка"));
+		count++;
+		if ( uN > rN ) { alert("Число больше загаданного"); }	
+		if ( uN < rN ) { alert("Число меньше загаданного"); }	
+	}
+	alert("Ты чемпион! Количество попыток: "+count);
+</script>

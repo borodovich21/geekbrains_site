@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script>
+
+	var hello = alert("Поиграем?")
+	var riddle1 = alert("Является ли Плутон планетой?")
+	var right = 0
+	var count = 0
+	var answer1 = prompt("")
+
+	if ( 	
+		(answer1 == "НЕТ") || (answer1 =="нет")	|| (answer1 =="Нет")
+		)
+		{	right = right + 1;	alert ("Верно! Следующий вопрос:")	}
+	else {	alert ("У вас не достаточно сил, подкрепитесь и продолжим!")	}
+		count = count + 1
+
+	var riddle2 = alert("Сколько атомов водорода в молекуле воды?")
+	var answer2 = prompt("")
+
+	if (	(answer2 == "Два") || (answer2 == "два") || (answer2 == "2") || (answer2 == "ДВА")	)
+		{	right = right + 1;	}
+	else {}
+		count = count + 1
+
+	var riddle3 = alert("Что объединяет вселенную и человеческую глупость?")
+	var answer3 = prompt("")
+
+	if (	(answer3 == "Бесконечность") || (answer3 == "бесконечность") || (answer3 == "БЕСКОНЕЧНОСТЬ"	)	)
+		{	right = right + 1;	}
+	else {}
+		count = count + 1
+		
+		alert("Вы ответили правильно на " + right + " из " + count + " вопросов")
+
+</script>
